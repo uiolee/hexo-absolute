@@ -1,0 +1,2 @@
+# hexo-absolute
+a plugin
