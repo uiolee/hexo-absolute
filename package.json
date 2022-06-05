@@ -1,0 +1,40 @@
+{
+    "name": "hexo-absolute",
+    "version": "0.0.2",
+    "description": "convert relative path to absolute URL for hexo",
+    "main": "index.js",
+    "directories": {
+        "lib": "lib"
+    },
+    "files": [
+        "lib",
+        "index.js"
+    ],
+    "scripts": {
+        "eslint": "eslint .",
+        "test": "mocha test/index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/uiolee/hexo-absolute.git"
+    },
+    "keywords": [
+        "hexo",
+        "url",
+        "seo",
+        "html"
+    ],
+    "author": "uiolee (https://github.com/uiolee)",
+    "license": "GPL-3.0",
+    "bugs": {
+        "url": "https://github.com/uiolee/hexo-absolute/issues"
+    },
+    "homepage": "https://github.com/uiolee/hexo-absolute#readme",
+    "devDependencies": {
+        "eslint": "^8.17.0",
+        "eslint-config-hexo": "^5.0.0"
+    },
+    "dependencies": {
+        "cheerio": "^1.0.0-rc.11"
+    }
+}
