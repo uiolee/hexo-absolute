@@ -4,11 +4,14 @@
 hexo.config.absolute = Object.assign({
   tagName: ['a', 'link', 'img', 'script'],
   attribute: ['href', 'src'],
-  priority: 20
+  priority: 20,
+  disable: false
 }, hexo.config.absolute);
 
 const absolute = hexo.config.absolute;
 
 const filter = require('./lib/filter');
 
-hexo.extend.filter.register('after_render:html', filter, absolute.priority);
+if (!absolute.disable) {
+  hexo.extend.filter.register('after_render:html', filter, absolute.priority);
+}

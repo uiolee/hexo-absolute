@@ -32,6 +32,7 @@ absolute:
   tagName: ['a', 'link', 'img', 'script']
   attribute: ['href', 'src']
   priority: 20
+  disable: 0
 ```
 
 - `tagName`
@@ -45,6 +46,10 @@ absolute:
 - `priority`
 
     >[You can define the priority. Lower priority means that it will be executed first. The default priority is 10.](https://hexo.io/api/filter.html#Synopsis)
+
+- `disable`
+
+    boolean, set `1` to disable this plugin.
 
 ## Uninstall
 
