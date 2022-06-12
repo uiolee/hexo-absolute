@@ -51,6 +51,26 @@ absolute:
 
     boolean, set `1` to disable this plugin.
 
+## Example (default config)
+
+### before
+
+```html
+<a href="#top">top</a>
+<link rel="stylesheet" href="/css/style.css" />
+<img src="/images/hexo.png"/>
+<script src="/js/jquery-2.2.4.min.js"></script>
+```
+
+### after
+
+```html
+<a href="https://example.org/#top">top</a>
+<link rel="stylesheet" href="https://example.org/css/style.css" />
+<img src="https://example.org/images/hexo.png"/>
+<script src="https://example.org/js/jquery-2.2.4.min.js"></script>
+```
+
 ## Uninstall
 
 ```bash
