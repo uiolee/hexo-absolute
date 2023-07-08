@@ -3,29 +3,31 @@ name: Linter
 on: [push, pull_request]
 
 jobs:
-  linter:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
+    linter:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
 
-      - name: Use Node.js 16
-        uses: actions/setup-node@v2
-        with:
-          node-version: '16'
+            - name: Use Node.js LTS
+              uses: actions/setup-node@v3
+              with:
+                  node-version: 'lts/*'
 
-      - name: Cache NPM dependencies
-        uses: actions/cache@v2
-        with:
-          path: node_modules
-          key: ${{ runner.OS }}-npm-cache
-          restore-keys: |
-            ${{ runner.OS }}-npm-cache
+            - name: Cache NPM dependencies
+              uses: actions/cache@v3
+              with:
+                  path: |
+                      ~/.npm
+                      node_modules
+                  key: ${{ runner.OS }}-node-${{ hashFiles('**/package.json') }}
+                  restore-keys: |
+                      ${{ runner.OS }}-node-
 
-      - name: Install Dependencies
-        run: npm install
+            - name: Install Dependencies
+              run: npm install
 
-      - name: Lint
-        run: |
-          npm run eslint
-        env:
-          CI: true
+            - name: Lint
+              run: |
+                  npm run eslint
+              env:
+                  CI: true

@@ -1,4 +1,5 @@
 # hexo-absolute
+
 convert relative path to absolute URL for hexo
 
 ## Bugs
@@ -10,7 +11,9 @@ convert relative path to absolute URL for hexo
 ```bash
 npm i hexo-absolute
 ```
+
 or
+
 ```bash
 npm i git@github.com:uiolee/hexo-absolute.git
 ```
@@ -23,6 +26,7 @@ npm i git@github.com:uiolee/hexo-absolute.git
 # If your website is in a subdirectory (such as http://example.org/blog) set url to http://example.org/blog and set root to /blog/.
 url: http://example.org/blog
 ```
+
 [Docs: Hexo/Configuration#URL](https://hexo.io/docs/configuration#URL)
 
 ### Plugin default config
@@ -44,6 +48,8 @@ absolute:
     html tag attribute
 
 - `priority`
+
+    define the priority of plugin.
 
     >[You can define the priority. Lower priority means that it will be executed first. The default priority is 10.](https://hexo.io/api/filter.html#Synopsis)
 
