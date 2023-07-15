@@ -1,10 +1,10 @@
 # hexo-absolute
 
-convert relative path to absolute URL for hexo
+[![npm](https://img.shields.io/npm/v/hexo-absolute?style=for-the-badge)](https://www.npmjs.com/package/hexo-absolute)
 
-## Bugs
+Convert relative path to absolute URL for [hexo](https://github.com/hexojs/hexo)
 
-- The plugin will running in `hexo serve` (it means you can't preview your website local.)
+**Only run when `hexo generate` or `deploy`**, won't run when `hexo server`.
 
 ## Install
 
@@ -18,7 +18,7 @@ or
 npm i git@github.com:uiolee/hexo-absolute.git
 ```
 
-## Config
+## Configuration
 
 ### Website Configuration
 
@@ -27,35 +27,36 @@ npm i git@github.com:uiolee/hexo-absolute.git
 url: http://example.org/blog
 ```
 
-[Docs: Hexo/Configuration#URL](https://hexo.io/docs/configuration#URL)
+[**Hexo/Docs/Configuration#URL**](https://hexo.io/docs/configuration#URL)
 
-### Plugin default config
+### Plugin Default Configuration
 
 ```yaml
 absolute:
-  tagName: ['a', 'link', 'img', 'script']
-  attribute: ['href', 'src']
+  enable: true
+  tagName: ["a", "link", "img", "script"]
+  attribute: ["href", "src"]
   priority: 20
-  disable: 0
 ```
+
+- `enable`
+
+  boolean, set `false` to disable this plugin.
 
 - `tagName`
 
-    html tag name
+  html tag name
 
 - `attribute`
 
-    html tag attribute
+  html tag attribute
 
 - `priority`
 
-    define the priority of plugin.
+  define the priority of plugin.
 
-    >[You can define the priority. Lower priority means that it will be executed first. The default priority is 10.](https://hexo.io/api/filter.html#Synopsis)
-
-- `disable`
-
-    boolean, set `1` to disable this plugin.
+  > [**Hexo/API/Filter#Synopsis:**  
+  > You can define the priority. Lower priority means that it will be executed first. The default priority is 10.](https://hexo.io/api/filter.html#Synopsis)
 
 ## Example (default config)
 
@@ -64,7 +65,7 @@ absolute:
 ```html
 <a href="#top">top</a>
 <link rel="stylesheet" href="/css/style.css" />
-<img src="/images/hexo.png"/>
+<img src="/images/hexo.png" />
 <script src="/js/jquery-2.2.4.min.js"></script>
 ```
 
@@ -73,7 +74,7 @@ absolute:
 ```html
 <a href="https://example.org/#top">top</a>
 <link rel="stylesheet" href="https://example.org/css/style.css" />
-<img src="https://example.org/images/hexo.png"/>
+<img src="https://example.org/images/hexo.png" />
 <script src="https://example.org/js/jquery-2.2.4.min.js"></script>
 ```
 
@@ -82,7 +83,3 @@ absolute:
 ```bash
 npm uninstall hexo-absolute
 ```
-
-## TODO
-
-see [./lib/filter.js](./lib/filter.js) comment for more.
