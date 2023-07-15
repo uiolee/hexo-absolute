@@ -1,38 +1,38 @@
 {
-    "name": "hexo-absolute",
-    "version": "0.1.0",
-    "description": "convert relative path to absolute URL for hexo",
-    "main": "index.js",
-    "files": [
-        "lib",
-        "index.js"
-    ],
-    "scripts": {
-        "lint": "eslint .",
-        "lint:fix": "eslint .",
-        "test": "mocha test"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/uiolee/hexo-absolute.git"
-    },
-    "keywords": [
-        "hexo",
-        "url",
-        "seo",
-        "html"
-    ],
-    "author": "uiolee (https://github.com/uiolee)",
-    "license": "MPL-2.0",
-    "bugs": {
-        "url": "https://github.com/uiolee/hexo-absolute/issues"
-    },
-    "homepage": "https://github.com/uiolee/hexo-absolute#readme",
-    "devDependencies": {
-        "eslint": "^8.44.0",
-        "eslint-config-hexo": "^5.0.0"
-    },
-    "dependencies": {
-        "cheerio": "^1.0.0-rc.11"
-    }
+  "name": "hexo-absolute",
+  "version": "0.1.0",
+  "description": "convert relative path to absolute URL for hexo",
+  "main": "index.js",
+  "files": [
+    "lib",
+    "index.js"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://github.com/uiolee/hexo-absolute.git"
+  },
+  "keywords": [
+    "hexo",
+    "url",
+    "seo",
+    "html"
+  ],
+  "author": "Uiolee (https://github.com/uiolee)",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/uiolee/hexo-absolute/issues"
+  },
+  "homepage": "https://github.com/uiolee/hexo-absolute#readme",
+  "devDependencies": {
+    "eslint": "^8.44.0",
+    "eslint-config-hexo": "^5.0.0"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.11"
+  }
 }
