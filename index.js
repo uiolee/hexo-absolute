@@ -1,17 +1,18 @@
 /* global hexo */
+
 'use strict';
 
+const filterFn = require('./lib/filter');
+
 hexo.config.absolute = Object.assign({
+  enable: true,
   tagName: ['a', 'link', 'img', 'script'],
   attribute: ['href', 'src'],
-  priority: 20,
-  disable: false
+  priority: 20
 }, hexo.config.absolute);
 
 const absolute = hexo.config.absolute;
 
-const filter = require('./lib/filter');
-
-if (!absolute.disable) {
-  hexo.extend.filter.register('after_render:html', filter, absolute.priority);
+if (absolute.enable && hexo.env.cmd.startsWith('g')) {
+  hexo.extend.filter.register('after_render:html', filterFn, absolute.priority);
 }
