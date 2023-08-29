@@ -1,12 +1,18 @@
 # hexo-absolute
 
-[![npm](https://img.shields.io/npm/v/hexo-absolute?style=for-the-badge)](https://www.npmjs.com/package/hexo-absolute)
+[![GitHub](https://img.shields.io/github/license/uiolee/hexo-absolute?style=for-the-badge)](https://github.com/uiolee/hexo-absolute/blob/main/LICENSE)
+[![Coveralls branch](https://img.shields.io/coverallsCoverage/github/uiolee/hexo-absolute?branch=main&style=for-the-badge)](https://coveralls.io/github/uiolee/hexo-absolute?branch=main)
+[![test](https://img.shields.io/github/actions/workflow/status/uiolee/hexo-absolute/test.yml?style=for-the-badge&label=test)](https://github.com/uiolee/hexo-absolute/actions/workflows/test.yml)
 
 Convert relative path to absolute URL for [hexo](https://github.com/hexojs/hexo)
 
 **Only run when `hexo generate` or `deploy`**, won't run when `hexo server`.
 
 ## Install
+
+[![npm](https://img.shields.io/npm/v/hexo-absolute?style=for-the-badge)](https://www.npmjs.com/package/hexo-absolute)
+[![npm](https://img.shields.io/npm/dm/hexo-absolute?style=for-the-badge)](https://www.npmjs.com/package/hexo-absolute)
+[![npm](https://img.shields.io/npm/dt/hexo-absolute?style=for-the-badge)](https://www.npmjs.com/package/hexo-absolute)
 
 ```bash
 npm i hexo-absolute
@@ -29,7 +35,7 @@ url: http://example.org/blog
 
 [**Hexo/Docs/Configuration#URL**](https://hexo.io/docs/configuration#URL)
 
-### Plugin Default Configuration
+### Plugin Configuration
 
 ```yaml
 absolute:
@@ -53,9 +59,9 @@ absolute:
 
 - `priority`
 
-  define the priority of plugin.
+  define the priority of this plugin.
 
-  > [**Hexo/API/Filter#Synopsis:**  
+  > [**Hexo/API/Filter#Synopsis:**
   > You can define the priority. Lower priority means that it will be executed first. The default priority is 10.](https://hexo.io/api/filter.html#Synopsis)
 
 ## Example (default config)
