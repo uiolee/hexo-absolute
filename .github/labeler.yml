@@ -13,4 +13,3 @@ github:
 
 github_actions:
   - ".github/workflows/**"
-

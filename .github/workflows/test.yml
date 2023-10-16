@@ -2,18 +2,19 @@ name: test
 
 on:
   push:
-    branches: ["main"]
+    branches:
+      - "main"
     paths:
-      - "**.js?"
-      - "**.ts?"
+      - "**.jsx?"
+      - "**.tsx?"
       - "lib/**"
       - "test/**"
       - "package.json"
       - ".github/workflows/test.yml"
   pull_request:
     paths:
-      - "**.js?"
-      - "**.ts?"
+      - "**.jsx?"
+      - "**.tsx?"
       - "lib/**"
       - "test/**"
       - "package.json"

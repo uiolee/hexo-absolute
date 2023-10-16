@@ -7,12 +7,20 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: "the package version you want to publish"
+        description: "the package version you want to bump"
         required: true
         default: "keep current"
         type: choice
         options:
           - keep current
+          - major
+          - minor
+          - patch
+          - premajor
+          - preminor
+          - prepatch
+          - prerelease
+          - from-git
   push:
     tags:
       - "v*.*.*"
@@ -52,6 +60,8 @@ jobs:
 
   publish-npm:
     needs: test
+    permissions:
+      id-token: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -59,11 +69,11 @@ jobs:
         with:
           node-version: "lts/*"
           registry-url: https://registry.npmjs.org/
-      - run: npm publish
+      - run: npm publish --provenance
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
-  publish-gpr:
+  publish-ghp:
     needs: test
     runs-on: ubuntu-latest
     env:
@@ -71,6 +81,7 @@ jobs:
     permissions:
       contents: read
       packages: write
+      id-token: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
