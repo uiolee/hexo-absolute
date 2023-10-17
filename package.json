@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://github.com/uiolee/hexo-absolute.git"
+    "url": "git+ssh://git@github.com/uiolee/hexo-absolute.git"
   },
   "license": "MPL-2.0",
   "author": "Uiolee (https://github.com/uiolee)",
