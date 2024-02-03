@@ -1,18 +1,25 @@
 # hexo-absolute
 
-[![GitHub](https://img.shields.io/github/license/uiolee/hexo-absolute?style=for-the-badge)](https://github.com/uiolee/hexo-absolute/blob/main/LICENSE)
-[![Coveralls branch](https://img.shields.io/coverallsCoverage/github/uiolee/hexo-absolute?branch=main&style=for-the-badge)](https://coveralls.io/github/uiolee/hexo-absolute?branch=main)
-[![CI](https://img.shields.io/github/actions/workflow/status/uiolee/hexo-absolute/ci.yml?style=for-the-badge&label=ci)](https://github.com/uiolee/hexo-absolute/actions/workflows/ci.yml)
+[![GitHub Tag](https://img.shields.io/github/v/tag/uiolee/hexo-absolute?logo=github)](https://github.com/uiolee/hexo-absolute/tags)
+[![GitHub Release](https://img.shields.io/github/v/release/uiolee/hexo-absolute?logo=github)](https://github.com/uiolee/hexo-absolute/releases)
+[![GitHub commits since latest release](https://img.shields.io/github/commits-since/uiolee/hexo-absolute/latest?include_prereleases&sort=semver&logo=github)](https://github.com/uiolee/hexo-absolute/compare/...main)
+[![GitHub top language](https://img.shields.io/github/languages/top/uiolee/hexo-absolute?logo=github)](#hexo-absolute)
+[![Coverage Status](https://coveralls.io/repos/github/uiolee/hexo-absolute/badge.svg?branch=main)](https://coveralls.io/github/uiolee/hexo-absolute?branch=main)
+[![CI](https://github.com/uiolee/hexo-absolute/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/uiolee/hexo-absolute/actions/workflows/ci.yml)
+[![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/uiolee/hexo-absolute?logo=librariesdotio)](https://libraries.io/github/uiolee/hexo-absolute#dependencies)
 
 Convert relative path to absolute URL for [hexo](https://github.com/hexojs/hexo)
 
-**Only run when `hexo generate` or `deploy`**, won't run when `hexo server`.
+Only run when `hexo generate` or `deploy`, won't run when `hexo server`.
 
 ## Install
 
-[![npm](https://img.shields.io/npm/v/hexo-absolute?style=for-the-badge)](https://www.npmjs.com/package/hexo-absolute)
-[![npm](https://img.shields.io/npm/dm/hexo-absolute?style=for-the-badge)](https://www.npmjs.com/package/hexo-absolute)
-[![npm](https://img.shields.io/npm/dt/hexo-absolute?style=for-the-badge)](https://www.npmjs.com/package/hexo-absolute)
+[![NPM Version](https://img.shields.io/npm/v/hexo-absolute?logo=npm)](https://www.npmjs.com/package/hexo-absolute)
+[![node-lts](https://img.shields.io/node/v-lts/hexo-absolute?logo=nodedotjs)](https://nodejs.org/)
+[![NPM License](https://img.shields.io/npm/l/hexo-absolute)](./LICENSE)
+[![NPM Downloads](https://img.shields.io/npm/dm/hexo-absolute?logo=npm)](#hexo-absolute)
+[![NPM Downloads](https://img.shields.io/npm/dt/hexo-absolute?logo=npm)](#hexo-absolute)
+[![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/hexo-absolute?logo=librariesdotio)](https://libraries.io/npm/hexo-absolute/tree)
 
 ```bash
 pnpm add hexo-absolute

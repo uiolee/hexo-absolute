@@ -4,6 +4,7 @@
   "description": "convert relative path to absolute URL for hexo",
   "keywords": [
     "hexo",
+    "hexo-plugin",
     "url",
     "seo",
     "html"
