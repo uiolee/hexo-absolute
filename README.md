@@ -2,7 +2,7 @@
 
 [![GitHub](https://img.shields.io/github/license/uiolee/hexo-absolute?style=for-the-badge)](https://github.com/uiolee/hexo-absolute/blob/main/LICENSE)
 [![Coveralls branch](https://img.shields.io/coverallsCoverage/github/uiolee/hexo-absolute?branch=main&style=for-the-badge)](https://coveralls.io/github/uiolee/hexo-absolute?branch=main)
-[![test](https://img.shields.io/github/actions/workflow/status/uiolee/hexo-absolute/test.yml?style=for-the-badge&label=test)](https://github.com/uiolee/hexo-absolute/actions/workflows/test.yml)
+[![CI](https://img.shields.io/github/actions/workflow/status/uiolee/hexo-absolute/ci.yml?style=for-the-badge&label=ci)](https://github.com/uiolee/hexo-absolute/actions/workflows/ci.yml)
 
 Convert relative path to absolute URL for [hexo](https://github.com/hexojs/hexo)
 
@@ -15,13 +15,9 @@ Convert relative path to absolute URL for [hexo](https://github.com/hexojs/hexo)
 [![npm](https://img.shields.io/npm/dt/hexo-absolute?style=for-the-badge)](https://www.npmjs.com/package/hexo-absolute)
 
 ```bash
-npm i hexo-absolute
-```
+pnpm add hexo-absolute
 
-or
-
-```bash
-npm i git@github.com:uiolee/hexo-absolute.git
+# npm i hexo-absolute
 ```
 
 ## Configuration
@@ -87,5 +83,7 @@ absolute:
 ## Uninstall
 
 ```bash
-npm uninstall hexo-absolute
+pnpm rm hexo-absolute
+
+# npm uninstall hexo-absolute
 ```
