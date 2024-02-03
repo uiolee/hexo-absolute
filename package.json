@@ -26,9 +26,13 @@
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
+    "sort": "pnpm dlx sort-package-json",
     "test": "jest",
     "test:cov": "jest --coverage --coverageReporters=html text",
     "test:lcov": "jest --coverage --coverageReporters=lcovonly text"
+  },
+  "dependencies": {
+    "cheerio": "1.0.0-rc.12"
   },
   "devDependencies": {
     "eslint": "^8.51.0",
