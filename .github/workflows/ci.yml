@@ -40,7 +40,7 @@ jobs:
         with:
           node-version: ${{ matrix.node_version }}
 
-      - uses: pnpm/action-setup@v3
+      - uses: pnpm/action-setup@v4
         name: Install pnpm
 
       - name: Get pnpm store directory
@@ -73,7 +73,7 @@ jobs:
         with:
           node-version: ${{env.default_node_version}}
 
-      - uses: pnpm/action-setup@v3
+      - uses: pnpm/action-setup@v4
         name: Install pnpm
 
       - name: Get pnpm store directory
@@ -110,7 +110,7 @@ jobs:
         with:
           node-version: ${{env.default_node_version}}
 
-      - uses: pnpm/action-setup@v3
+      - uses: pnpm/action-setup@v4
         name: Install pnpm
 
       - name: Get pnpm store directory
